@@ -1,24 +1,25 @@
 <?php
 
-function call($controller, $action) {
+function call($controller, $action, $year) {
     
     require_once('controllers/' . $controller . '_controller.php');
     
     switch($controller) {
         
-        case 'pages':
-            $controller = new PagesController();
+        case 'walls':
+            require_once('app/models/walls/wall.php');
+            $controller = new WallsController($year);
             break;
     }
     
     $controller->{ $action }();
 }
 
-$controllers = array('pages' => ['home', 'walls']);
+$controllers = array('walls' => ['walls']);
 
 if (array_key_exists($controller, $controllers)) {
     if (in_array($action, $controllers[$controller])) {
-        call($controller, $action);
+        call($controller, $action, $year);
     } else {
         call('pages', 'error');
     }

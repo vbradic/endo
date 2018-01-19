@@ -41,5 +41,4 @@
 <script>
     baguetteBox.run('.tz-gallery');
 </script>
-</body>
-</html>
+

@@ -5,12 +5,6 @@
     $controller = $_GET['controller'];
     $action     = $_GET['action'];
     
-    if(isset($_GET['year'])) {
-        $year = $_GET['year'];
-        var_dump($year);
-        
-    }
-    
   } else {
     $controller = 'pages';
     $action     = 'home';

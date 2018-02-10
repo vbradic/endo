@@ -1,8 +1,8 @@
 
-
-<meta charset="utf-8">
+<!--  <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+-->
 
 <title>Freebie: 4 Bootstrap Gallery Templates</title>
 
@@ -12,54 +12,63 @@
 	rel='stylesheet'>
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-<link rel="stylesheet" href="app/css/fluid-gallery.css">
 
+
+
+<?php
+$layout_offset = array(
+    "6",
+    "6",
+    "6",
+    "6",
+    "6",
+    "6",
+    "4",
+    "6"
+);
+$counter = 0;
+?>
 
 <div class="container gallery-container">
 
-	<h1>Bootstrap 3 Gallery</h1>
+	<h1 class="walls-header">514.415</h1>
+	<hr class="hr_style">
+	<div class="tz-gallery" id="photos">
+	<!--  	<div class="row">
+		<div
+				class="col-sm-12 col-md-6 img-holder">-->
+<?php foreach($wall_list as $wall) { ?>
+    	
 
-	<p class="page-description text-center">Fluid Layout With Overlay
-		Effect</p>
 
-	<div class="tz-gallery">
 
-		<div class="row">
 
-			<div class="col-sm-12 col-md-8 img-holder">
-				<a class="lightbox" href="../images/bridge.jpg"> <img
-					src="app/imgs/walls/bridge.jpg" alt="Bridge">					
+			<div class="img-holder">
+				<a class=""
+					href="app/imgs/walls/<?php echo $wall->picture_path ?>"> <img
+					class="img-walls img-responsive "
+					src="app/imgs/walls/<?php echo $wall->picture_path ?>">
 				</a>
-				<div class="bottom-left">Bottom Left</div>
-			</div>
-			<div class="col-sm-6 col-md-4">
-				<a class="lightbox" href="../images/park.jpg"> <img
-					src="app/imgs/walls/park.jpg" alt="Park">
-				</a>
-			</div>
-			<div class="col-sm-6 col-md-4">
-				<a class="lightbox" href="../images/tunnel.jpg"> <img
-					src="app/imgs/walls/tunnel.jpg" alt="Tunnel">
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-4">
-				<a class="lightbox" href="../images/traffic.jpg"> <img
-					src="app/imgs/walls/traffic.jpg" alt="Traffic">
-				</a>
-			</div>
-			<div class="col-sm-6 col-md-4">
-				<a class="lightbox" href="../images/coast.jpg"> <img
-					src="app/imgs/walls/coast.jpg" alt="Coast">
-				</a>
-			</div>
-			<div class="col-sm-6 col-md-4">
-				<a class="lightbox" href="../images/rails.jpg"> <img
-					src="app/imgs/walls/rails.jpg" alt="Rails">
-				</a>
-			</div>
+				
+				<div class="bottom-left">Bottom Left kasdhaskdjh</div>
+			</div>	
+			
+			
+			
+			
 
+					
+
+					
+<?php }?>
+
+
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<hr class="hr_style">
 		</div>
-
 	</div>
 
 </div>

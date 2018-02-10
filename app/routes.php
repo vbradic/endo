@@ -1,6 +1,6 @@
 <?php
 
-function call($controller, $action, $year) {
+function call($controller, $action) {
     
     require_once('controllers/' . $controller . '_controller.php');
     
@@ -8,18 +8,18 @@ function call($controller, $action, $year) {
         
         case 'walls':
             require_once('app/models/walls/wall.php');
-            $controller = new WallsController($year);
+            $controller = new WallsController();
             break;
     }
     
     $controller->{ $action }();
 }
 
-$controllers = array('walls' => ['walls']);
+$controllers = array('walls' => ['numbers', 'details']);
 
 if (array_key_exists($controller, $controllers)) {
     if (in_array($action, $controllers[$controller])) {
-        call($controller, $action, $year);
+        call($controller, $action);
     } else {
         call('pages', 'error');
     }

@@ -1,17 +1,18 @@
 <?php
 class WallsController {
      
-    public $year;
+    function __construct() {}
     
-    function __construct($year) {
-        $this->year = $year;
+    public function numbers() { 
+                   
+        $numbers = "numbers";
+        $wall_list = Wall::wallsPerCategorie($numbers);
+        require_once('app/views/walls/walls-fluid.php');
     }
     
-    public function walls() { 
-            
-        $wall_list = Wall::wallsPerYear($this->year);
-       // require_once('app/views/walls/walls.php');
-        require_once('app/views/walls/walls-fluid.php');
+    public function details() {
+        
+        require_once('app/views/walls/img-details.php');
     }
        
     public function error() {

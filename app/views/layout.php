@@ -28,7 +28,10 @@
 
 <link href='https://fonts.googleapis.com/css?family=Bangers'
 	rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="app/css/freestyle.css">
+<link rel="stylesheet" href="app/css/fluid-gallery.css">
+<link rel="stylesheet" href="app/css/img-details.css">
 
 </head>
 
@@ -36,8 +39,8 @@
 
 	<div class="nav-side-menu">
 		<div class="brand">
-			<img src="app/imgs/sarena_150x150.jpg" class="img-responsive"
-				style="width: 50%; margin: auto; padding-top: 10%;"></img>
+			<img src="app/imgs/logo/logo.jpg" class="img-responsive"
+				style="width: 70%; margin: auto; padding-top: 10%;"></img>
 		</div>
 		<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse"
 			data-target="#menu-content"></i>
@@ -48,11 +51,10 @@
 					class="collapsed "><a href="#"> Walls <!--   <span class="arrow"></span> -->
 				</a></li>
 
-				<ul class="sub-menu collapse" id="products">
-					<li><a href="#">2017</a></li>
-					<li><a href="#">2016</a></li>
-					<li><a href="#">2015</a></li>
-					<li><a href="#">2014</a></li>
+				<ul class="sub-menu collapse text-centar" id="products">
+					<li>  <a href="index.php?controller=walls&action=walls&year=2017#">ENDO</a></li>
+					<li>  <a href="index.php?controller=walls&action=514415">514.415</a>	</li>
+					<li>  <a href="#">YELLOW COMPANY</a>	</li>
 				</ul>
 				
 				<li><a href="#"> Profile </a></li>
@@ -61,8 +63,8 @@
 		</div>
 		
 		<div class="row footer">
-		<div class="col-sm-10 col-sm-offset-1">
-    	<hr />
+		<div class="col-xs-10 col-xs-offset-1">
+    	<!--  <hr class="hr_style" style="margin-top:20%;"> -->
         <div class="text-center center-block">
             
             <br />
@@ -71,11 +73,9 @@
 	            <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-2x social"></i></a>
 	            <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-2x social"></i></a>
 		</div>
-    	<hr />
+    	<hr class="hr_style">
     	</div>
 		</div>
-		
-		
 		
 	</div>
 	

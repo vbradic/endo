@@ -1,0 +1,31 @@
+#img_details {
+	text-align: center;
+    margin-top: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    /*font-family: 'Droid Sans', sans-serif;*/
+    /*font-weight: bold;*/
+}
+
+.single_image {
+	margin-bottom: 80px;
+	margin-top: 40px;
+}
+
+
+.hr_row {
+	margin-top:20%;
+}
+
+
+@media (max-width: 767px) {
+	
+	.single_image {
+		margin-bottom: 0px;
+		
+	}
+	
+	#baguetteBox-overlay .full-image img{
+		height:80% !important;
+	}
+		
+}

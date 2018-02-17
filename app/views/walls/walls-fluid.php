@@ -31,46 +31,66 @@ $counter = 0;
 
 <div class="container gallery-container">
 
-	<h1 class="walls-header">514.415</h1>
-	<hr class="hr_style">
-	<div class="tz-gallery" id="photos">
-	<!--  	<div class="row">
-		<div
-				class="col-sm-12 col-md-6 img-holder">-->
-<?php foreach($wall_list as $wall) { ?>
-    	
 
+	<?php  require_once('app/views/walls/category_info.php'); ?>
 
-
-
-			<div class="img-holder">
-				<a class=""
-					href="app/imgs/walls/<?php echo $wall->picture_path ?>"> <img
-					class="img-walls img-responsive "
-					src="app/imgs/walls/<?php echo $wall->picture_path ?>">
-				</a>
-				
-				<div class="bottom-left">Bottom Left kasdhaskdjh</div>
-			</div>	
-			
-			
-			
-			
-
-					
-
-					
-<?php }?>
-
-
-	</div>
-
+<!--  
 	<div class="row">
 		<div class="col-xs-12">
 			<hr class="hr_style">
 		</div>
 	</div>
+-->	
 
+<?php if(isset($_GET['id'])) {?>
+<div class="row">
+		<div class="col-xs-12 text-center gallery_description">
+			<h2><?php echo $wall_list[0]->description;?></h2>
+		</div>
+	</div>
+<?php }?>
+
+	<div class="tz-gallery" id="photos">
+		<!--  	<div class="row">
+		<div
+				class="col-sm-12 col-md-6 img-holder">-->
+<?php foreach($wall_list as $wall) { ?>
+    	
+			<div class="img-holder">
+			<a class="" href="
+			<?php 
+			$id = $wall->id;
+			if($wall->details & !isset($_GET['id'])) {
+			    echo "index.php?controller=".$_GET['controller']."&action=".$_GET['action']."&id=".$id;
+			} else {
+			    echo "app/imgs/".$wall->picture_path; 
+			}
+			 ?>"> <img
+				class="img-walls img-responsive "
+				src="app/imgs/<?php echo $wall->picture_path; ?>">
+			</a>
+<?php if(!isset($_GET['id'])) {?>
+			<div class="bottom-left">
+				<p>
+					<b><?php echo $wall->description; ?></b>
+				</p>
+			</div>
+<?php }?>			
+
+		</div>	
+			
+				
+<?php }?>
+
+
+	</div>
+<!--  
+	<div class="row">
+		<div class="col-xs-12">
+			<hr class="hr_style">
+		</div>
+	</div>
+-->
 </div>
 
 <script

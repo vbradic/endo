@@ -40,7 +40,7 @@
 	<div class="nav-side-menu">
 		<div class="brand">
 			<img src="app/imgs/logo/logo.jpg" class="img-responsive"
-				style="width: 70%; margin: auto; padding-top: 10%;"></img>
+				style="width: 90%; margin: auto; padding-top: 10%;"></img>
 		</div>
 		<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse"
 			data-target="#menu-content"></i>
@@ -53,12 +53,12 @@
 
 				<ul class="sub-menu collapse text-centar" id="products">
 					<li>  <a href="index.php?controller=walls&action=walls&year=2017#">ENDO</a></li>
-					<li>  <a href="index.php?controller=walls&action=514415">514.415</a>	</li>
+					<li>  <a href="index.php?controller=walls&action=numbers">514.415</a>	</li>
 					<li>  <a href="#">YELLOW COMPANY</a>	</li>
 				</ul>
 				
-				<li><a href="#"> Profile </a></li>
-				<li><a href="#"> Users </a></li>
+				<li><a href="#"> Canvas </a></li>
+				<li><a href="#"> Contact </a></li>
 			</ul>
 		</div>
 		
@@ -68,12 +68,12 @@
         <div class="text-center center-block">
             
             <br />
-                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-2x social"></i></a>
-	            <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-2x social"></i></a>
-	            <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-2x social"></i></a>
-	            <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-2x social"></i></a>
+                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-4x social"></i></a>
+	            <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-4x social"></i></a>
+	            <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-4x social"></i></a>
+	            <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-4x social"></i></a>
 		</div>
-    	<hr class="hr_style">
+    	<!--  <hr class="hr_style"> -->
     	</div>
 		</div>
 		

@@ -6,7 +6,13 @@ class WallsController {
     public function numbers() { 
                    
         $numbers = "numbers";
-        $wall_list = Wall::wallsPerCategorie($numbers);
+        if (isset($_GET['id'])) {
+            $id = $_GET['id'];
+            $wall_list = Wall::imagesPerId($id);
+        } else {
+            $wall_list = Wall::headWallsPerCategorie($numbers);
+        }
+        
         require_once('app/views/walls/walls-fluid.php');
     }
     

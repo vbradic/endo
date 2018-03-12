@@ -51,14 +51,24 @@
 					class="collapsed "><a href="#"> Walls <!--   <span class="arrow"></span> -->
 				</a></li>
 
-				<ul class="sub-menu collapse text-centar" id="products">
+				<ul class="sub-menu collapse text-right" id="products">
 					<li>  <a href="index.php?controller=walls&action=walls&year=2017#">ENDO</a></li>
 					<li>  <a href="index.php?controller=walls&action=numbers">514.415</a>	</li>
-					<li>  <a href="#">YELLOW COMPANY</a>	</li>
+					<li>  <a href="index.php?controller=walls&action=zutaKompanija">YELLOW COMPANY</a>	</li>
 				</ul>
 				
-				<li><a href="#"> Canvas </a></li>
-				<li><a href="#"> Contact </a></li>
+				<li data-toggle="collapse" data-target="#works"
+					class="collapsed "><a href="#"> Works <!--   <span class="arrow"></span> -->
+				</a></li>
+
+				<ul class="sub-menu collapse text-right" id="works">
+					<li>  <a href="index.php?controller=walls&action=walls&year=2017#">DRAWINGS</a></li>
+					<li>  <a href="index.php?controller=walls&action=numbers">CANVASES</a>	</li>
+					<li>  <a href="index.php?controller=walls&action=zutaKompanija">ILLUSTRATION</a></li>
+				</ul>
+	
+				<li><a href="#">About Endo</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
 		

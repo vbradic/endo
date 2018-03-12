@@ -15,7 +15,7 @@ function call($controller, $action) {
     $controller->{ $action }();
 }
 
-$controllers = array('walls' => ['numbers', 'details']);
+$controllers = array('walls' => ['numbers', 'zutaKompanija','details']);
 
 if (array_key_exists($controller, $controllers)) {
     if (in_array($action, $controllers[$controller])) {

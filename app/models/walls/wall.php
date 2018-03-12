@@ -34,7 +34,7 @@ class Wall {
         
         $list = [];
         $db = Db::getInstance();
-        $req = $db->prepare('SELECT * FROM walls WHERE main_wall_id = :id');
+        $req = $db->prepare('SELECT * FROM walls WHERE main_wall_id = :id ORDER BY picture_path DESC');
         $req->execute(array('id' => $id));
         
         foreach($req->fetchAll() as $wall) {

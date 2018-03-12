@@ -16,6 +16,22 @@ class WallsController {
         require_once('app/views/walls/walls-fluid.php');
     }
     
+    public function zutaKompanija(){
+        
+        $zuta_kompanija = "zuta_kompanija";
+        
+        if (isset($_GET['id'])) {
+            $id = $_GET['id'];
+            $wall_list = Wall::imagesPerId($id);
+        } else {
+            $wall_list = Wall::headWallsPerCategorie($zuta_kompanija);
+        }
+        
+        require_once('app/views/walls/walls-fluid.php');
+        
+    }
+    
+    
     public function details() {
         
         require_once('app/views/walls/img-details.php');

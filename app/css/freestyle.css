@@ -4,8 +4,20 @@
   height: 100%;
 }
 
+#works > li > a{
+	font-size:17px;
+}
+
+#works > li > a:hover{
+	color: #000;
+}
+
 #products > li > a{
-	font-size:20px;
+	font-size:17px;
+}
+
+#products > li > a:active{
+	color:black;
 }
 
 #products > li > a:hover{

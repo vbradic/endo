@@ -31,6 +31,13 @@ class WallsController {
         
     }
     
+    public function canvas() {
+        
+        $canvas = "canvas";
+        $wall_list = Wall::headWallsPerCategorie($canvas);
+        require_once('app/views/walls/walls-fluid.php');
+    }
+    
     
     public function details() {
         

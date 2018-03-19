@@ -188,14 +188,15 @@ a:focus {
 
 @media (max-width: 767px) {
 	.footer{
-  	bottom: 7% !important;
+  	/*bottom: 7% !important;*/
+  	position: relative;
   }
 	#img_details {
 	height:auto;
 	}	
 	
 	.menu-content {
-	margin-top: 25% !important;
+	margin-top: 15% !important;
 	}
  
 }
@@ -221,7 +222,7 @@ body {
 
 .menu-list {
 	position: absolute;
-    top: 50%;
+    top: 40%;
     width: 100%;
     
 }
@@ -271,6 +272,7 @@ i {
  #main {
  	/*top: -9%;*/
     position: relative;
+    height: auto;
  }
   
 .hr_style {

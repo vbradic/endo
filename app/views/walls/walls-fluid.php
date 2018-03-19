@@ -32,7 +32,12 @@ $counter = 0;
 <div class="container gallery-container">
 
 
-	<?php  require_once('app/views/walls/category_info.php'); ?>
+	<?php  
+	
+	if(isset($_GET['action']) && $_GET['action'] != 'canvas'){
+	require_once('app/views/walls/category_info.php'); 
+	
+	}?>
 
 <!--  
 	<div class="row">
@@ -49,6 +54,8 @@ $counter = 0;
 		</div>
 	</div>
 <?php }?>
+
+<br><br>
 
 	<div class="tz-gallery" id="photos">
 		<!--  	<div class="row">

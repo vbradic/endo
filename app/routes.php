@@ -10,12 +10,16 @@ function call($controller, $action) {
             require_once('app/models/walls/wall.php');
             $controller = new WallsController();
             break;
+            
+        case 'pages':
+            $controller = new PagesController();
+            break;
     }
     
     $controller->{ $action }();
 }
 
-$controllers = array('walls' => ['numbers', 'zutaKompanija','details']);
+$controllers = array('walls' => ['numbers', 'zutaKompanija','details', 'canvas'], 'pages' => ['home']);
 
 if (array_key_exists($controller, $controllers)) {
     if (in_array($action, $controllers[$controller])) {

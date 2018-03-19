@@ -46,7 +46,7 @@
 			data-target="#menu-content"></i>
 		<div class="menu-list">
 			<ul id="menu-content" class="menu-content collapse out">
-				<li><a href="#"> Home </a></li>
+				<li><a href="index.php"> Home </a></li>
 				<li data-toggle="collapse" data-target="#products"
 					class="collapsed "><a href="#"> Walls <!--   <span class="arrow"></span> -->
 				</a></li>
@@ -63,7 +63,7 @@
 
 				<ul class="sub-menu collapse text-right" id="works">
 					<li>  <a href="index.php?controller=walls&action=walls&year=2017#">DRAWINGS</a></li>
-					<li>  <a href="index.php?controller=walls&action=numbers">CANVASES</a>	</li>
+					<li>  <a href="index.php?controller=walls&action=canvas">CANVASES</a>	</li>
 					<li>  <a href="index.php?controller=walls&action=zutaKompanija">ILLUSTRATION</a></li>
 				</ul>
 	

@@ -24,11 +24,11 @@
 		<?php if($_GET['action'] == 'numbers') {?>	
 			<img src="app/imgs/sajt/514_415/logo/logo_514415.jpg"
 				class="img-responsive"
-				style="width: 100%; margin: auto; padding-top: 10%;"></img>
+				style="width: 70%; margin: auto; padding-top: 10%;"></img>
 		<?php } else if($_GET['action'] == 'zutaKompanija') {?>
 			<img src="app/imgs/sajt/zuta_kompanija/Untitled-5.jpg"
 				class="img-responsive"
-				style="width: 100%; margin: auto; padding-top: 10%;"></img>
+				style="width: 70%; margin: auto; padding-top: 10%;"></img>
 		<?php }?>
 		</div>
 	</div>

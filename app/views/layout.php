@@ -29,6 +29,9 @@
 <link href='https://fonts.googleapis.com/css?family=Bangers'
 	rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
 <link rel="stylesheet" type="text/css" href="app/css/freestyle.css">
 <link rel="stylesheet" href="app/css/fluid-gallery.css">
 <link rel="stylesheet" href="app/css/img-details.css">
@@ -52,7 +55,7 @@
 				</a></li>
 
 				<ul class="sub-menu collapse text-right" id="products">
-					<li>  <a href="index.php?controller=walls&action=walls&year=2017#">ENDO</a></li>
+					<li>  <a href="index.php?controller=walls&action=endo">ENDO</a></li>
 					<li>  <a href="index.php?controller=walls&action=numbers">514.415</a>	</li>
 					<li>  <a href="index.php?controller=walls&action=zutaKompanija">YELLOW COMPANY</a>	</li>
 				</ul>
@@ -62,11 +65,11 @@
 				</a></li>
 
 				<ul class="sub-menu collapse text-right" id="works">
-					<li>  <a href="index.php?controller=walls&action=walls&year=2017#">DRAWINGS</a></li>
-					<li>  <a href="index.php?controller=walls&action=canvas">CANVASES</a>	</li>
+					<li>  <a href="index.php?controller=walls&action=walls&year=2017#">PAPER</a></li>
+					<li>  <a href="index.php?controller=walls&action=canvas">CANVAS</a>	</li>
 					<li>  <a href="index.php?controller=walls&action=zutaKompanija">ILLUSTRATION</a></li>
 				</ul>
-	
+				<li><a href="#">Video</a></li>
 				<li><a href="#">About Endo</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>

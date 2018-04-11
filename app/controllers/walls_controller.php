@@ -43,6 +43,12 @@ class WallsController {
         
         require_once('app/views/walls/img-details.php');
     }
+    
+    public function endo() {
+        $endo = "endo";
+        $wall_list = Wall::headWallsPerCategorie($endo);
+        require_once('app/views/walls/walls-fluid.php');
+    }
        
     public function error() {
         //require_once('views/walls/error.php');

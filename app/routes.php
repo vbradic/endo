@@ -19,7 +19,7 @@ function call($controller, $action) {
     $controller->{ $action }();
 }
 
-$controllers = array('walls' => ['numbers', 'zutaKompanija','details', 'canvas'], 'pages' => ['home']);
+$controllers = array('walls' => ['numbers', 'zutaKompanija','details', 'canvas', 'endo'], 'pages' => ['home']);
 
 if (array_key_exists($controller, $controllers)) {
     if (in_array($action, $controllers[$controller])) {

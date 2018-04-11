@@ -20,7 +20,7 @@ class Wall {
         
         $list = [];
         $db = Db::getInstance();
-        $req = $db->prepare('SELECT * FROM walls WHERE categorie = :categorie AND head_image=1');
+        $req = $db->prepare('SELECT * FROM walls WHERE categorie = :categorie AND head_image=1 ORDER BY id DESC');
         $req->execute(array('categorie' => $categorie));
         
         foreach($req->fetchAll() as $wall) {
